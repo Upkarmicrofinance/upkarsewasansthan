@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Apply Loan</title>
+
+<style>
+body{text-align:center;font-family:Arial;}
+nav{background:rgb(245, 3, 3);padding:12px;}
+nav a{color:white;margin:15px;text-decoration:none;}
+input,textarea{width:80%;padding:10px;margin:10px;}
+button{padding:10px 20px;background:green;color:white;border:none;}
+</style>
+
+</head>
+
+<body>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="apply.html">Apply Loan</a>
+<a href="gallery.html">Gallery</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+<h1>Apply for Loan</h1>
+
+<input type="text" id="name" placeholder="Your Name"><br>
+<input type="text" id="phone" placeholder="Phone Number"><br>
+<textarea id="details" placeholder="Loan Details"></textarea><br>
+
+<button onclick="sendWhatsApp()">Submit</button>
+
+<script>
+function sendWhatsApp() {
+    var name = document.getElementById("name").value;
+    var phone = document.getElementById("phone").value;
+    var details = document.getElementById("details").value;
+
+    var message = "New Loan Application:%0AName: " + name + "%0APhone: " + phone + "%0ADetails: " + details;
+
+    var url = "https://wa.me/917570926476?text=" + message;
+
+    window.open(url, '_blank');
+}
+</script>
+
+</body>
+</html>

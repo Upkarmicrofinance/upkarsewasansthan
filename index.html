@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UPKAR SEWA SANSTHAN </title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+}
+
+/* HEADER */
+header{
+    background: linear-gradient(to right, #d8161634, #14bae4);
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+
+/* LOGO as circle */
+header img {
+    content: url('logo.jpeg');  /* apna logo */
+    width: 100px;                /* size adjust kar sakta hai */
+    height: 100px;               /* circle ke liye width = height */
+    border-radius: 50%;         /* ye logo ko circle bana dega */
+    object-fit: cover;          /* rectangle image ko properly fit kare circle me */
+}
+
+
+/* MAIN TITLE */
+header h1{
+    font-size:40px;
+    margin:10px 0;
+    letter-spacing:2px;
+}
+
+/* NAVBAR */
+nav{
+    background:#f10606;
+    padding:12px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    margin:15px;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:yellow;
+}
+
+/* HERO SECTION */
+.hero{
+    height:750px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+    url('farmer.png');
+
+    background-size: cover;      /* sabse important */
+    background-position: center; /* center fit */
+    background-repeat: no-repeat;
+}
+
+/* HERO TEXT */
+.hero h2{
+    font-size:40px;
+    background: rgba(0,0,0,0.5);
+    padding:10px 20px;
+    border-radius:10px;
+}
+
+/* SECTION */
+.section{
+    padding:40px;
+    text-align:center;
+}
+
+/* FOOTER */
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <img src="logo.png"><br>
+    <h1>Upkar Sewa Sansthan</h1>
+</header>
+
+<!-- NAVBAR -->
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="apply.html">Apply Loan</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+    
+</div>
+
+<!-- CONTENT -->
+<div class="section">
+    <h2>Welcome to Upkar Sewa Sansthan</h2>
+    <p>We provide financial support and small loans to help rural families grow and succeed.</p>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Upkar Sewa Sansthan</p>
+</footer>
+
+</body>
+</html>
