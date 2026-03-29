@@ -108,12 +108,12 @@ nav a:hover{
     text-align: center;
     color: white;
 }
-
 /* Mobile ke liye fix */
 @media (max-width: 768px) {
     .hero {
-        height: auto;
-        background-size: contain; /* mobile me pura image dikhe */
+        height: 60vh; /* mobile me fixed height, screen ke 60% */
+        background-size: cover; /* image screen ko fully fill karegi */
+        background-position: center; /* center se dikhe */
         padding: 20px;
     }
 }
