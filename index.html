@@ -118,12 +118,14 @@ nav a:hover{
         box-sizing: border-box; /* padding include ho width me */
     }
 
+    /* Hero text ko safe margin aur wrap ke liye */
     .hero h1, 
     .hero p {
-        padding-left: 10px;  /* left se thoda space, text cut nahi hoga */
-        padding-right: 10px; /* right se bhi */
-        word-break: break-word; /* text wrap ho jaye agar lamba ho */
+        padding-left: 15px;  /* left se safe space, text cut nahi hoga */
+        padding-right: 15px; /* right se safe space */
+        word-break: break-word; /* agar lamba ho text to wrap ho jaye */
         text-align: center;   /* text center align rahe */
+        box-sizing: border-box; /* ensure padding include ho width me */
     }
 }
 
