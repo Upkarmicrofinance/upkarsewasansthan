@@ -108,24 +108,23 @@ nav a:hover{
     text-align: center;
     color: white;
 }
-/* Mobile ke liye fix */
-@media (max-width: 775px) {
+/* Mobile ke liye fix with slight left shift */
+@media (max-width: 768px) {
     .hero {
-        height: 60vh; /* mobile me fixed height, screen ke 60% */
-        background-size: cover; /* image screen ko fully fill karegi */
-        background-position: center; /* center se dikhe */
-        padding: 20px; /* overall padding */
-        box-sizing: border-box; /* padding include ho width me */
+        height: 60vh;
+        background-size: cover;
+        background-position: left center; /* center → left center */
+        padding: 20px;
+        box-sizing: border-box;
     }
 
-    /* Hero text ko safe margin aur wrap ke liye */
     .hero h1, 
     .hero p {
-        padding-left: 15px;  /* left se safe space, text cut nahi hoga */
-        padding-right: 15px; /* right se safe space */
-        word-break: break-word; /* agar lamba ho text to wrap ho jaye */
-        text-align: center;   /* text center align rahe */
-        box-sizing: border-box; /* ensure padding include ho width me */
+        padding-left: 15px;  
+        padding-right: 15px; 
+        word-break: break-word; 
+        text-align: center;   
+        box-sizing: border-box; 
     }
 }
 
@@ -186,7 +185,7 @@ footer{
 
 <!-- FOOTER -->
 <footer>
-    <p>© 2026 Upkar Sewa Sansthan</p>
+    <p>© 2020 Upkar Sewa Sansthan</p>
 </footer>
 
 </body>
