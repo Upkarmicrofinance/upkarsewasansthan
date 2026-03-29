@@ -114,7 +114,16 @@ nav a:hover{
         height: 60vh; /* mobile me fixed height, screen ke 60% */
         background-size: cover; /* image screen ko fully fill karegi */
         background-position: center; /* center se dikhe */
-        padding-left:10px;
+        padding: 20px; /* overall padding */
+        box-sizing: border-box; /* padding include ho width me */
+    }
+
+    .hero h1, 
+    .hero p {
+        padding-left: 10px;  /* left se thoda space, text cut nahi hoga */
+        padding-right: 10px; /* right se bhi */
+        word-break: break-word; /* text wrap ho jaye agar lamba ho */
+        text-align: center;   /* text center align rahe */
     }
 }
 
