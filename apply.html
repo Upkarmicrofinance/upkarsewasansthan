@@ -28,25 +28,29 @@ button{padding:10px 20px;background:green;color:white;border:none;}
 
 <h1>Apply for Loan</h1>
 
-<input type="text" id="name" placeholder="Your Name"><br>
-<input type="text" id="phone" placeholder="Phone Number"><br>
-<textarea id="details" placeholder="Loan Details"></textarea><br>
-
-<button onclick="sendWhatsApp()">Submit</button>
+<!-- Gmail Form for Loan Application -->
+<form onsubmit="sendGmail(); return false;">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="text" id="mobile" placeholder="Mobile Number" required>
+    <textarea id="details" placeholder="Loan Details" required></textarea>
+    <button type="submit">Submit</button>
+</form>
 
 <script>
-function sendWhatsApp() {
+function sendGmail() {
+    // Get values from form
     var name = document.getElementById("name").value;
-    var phone = document.getElementById("phone").value;
+    var mobile = document.getElementById("mobile").value;
     var details = document.getElementById("details").value;
 
-    var message = "New Loan Application:%0AName: " + name + "%0APhone: " + phone + "%0ADetails: " + details;
+    // Email subject and body
+    var subject = "New Loan Application";
+    var body = "Name: " + name + "%0AMobile: " + mobile + "%0ADetails: " + details;
 
-    var url = "https://wa.me/917570926476?text=" + message;
+    // Replace with your Gmail address
+    var mailtoLink = "mailto:upkarsewas@gmail.com?subject=" + subject + "&body=" + body;
 
-    window.open(url, '_blank');
+    // Open Gmail compose window
+    window.open(mailtoLink, '_blank');
 }
 </script>
-
-</body>
-</html>
